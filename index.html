@@ -10,43 +10,50 @@
 </head>
 
 <body>
-    <header></header>
-    <main>
-        <form action="" method="post" class="info">
-            <div class="destination_info">
-                <fieldset>
-                    <legend>Plats</legend>
-                    <label>Från:<br><input type="text" name="from" placeholder="Upphämtningsplats"></label><br>
-                    <label>Till:<br><input type="text" name="to" placeholder="Avlämningsplats"></label><br>
-                    <p>Estimerad restid: </p>
-                </fieldset>
-            </div>
-            <div class="customer_info">
-                <fieldset>
-                    <legend>Kund</legend>
-                    <label>Namn:<br><input type="text" name="name" placeholder="Skriv kundens namn här..."></label><br>
-                    <label>Telefon:<br><input type="text" name="phone"
-                            placeholder="Skriv telefonnnummer här..."></label><br>
-                    Antal passagerare:
-                    <select name="passengers">
-                        <option value="1" selected>1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                        <option value="6">6</option>
-                        <option value="7">7</option>
-                        <option value="8">8</option>
-                    </select>
-                </fieldset>
-            </div>
-            <div class="other_info">
-                <h2>Tillval:</h2>
-            </div>
-        </form>
+    <div class="container">
+        <header>
+            <img src="assets/tiger_taxi_logga.png" alt="Tiger Taxi Logga">
+            Tiger Taxi
+            Ny Bokning
+            Pågående
+            <a href=""><img src="assets/user_settings.png" alt="Användarinställningar"></a>
+        </header>
+        <main>
+            <form action="" method="post" class="info">
+                <div class="destination_info">
+                    <fieldset>
+                        <legend>Plats</legend>
+                        <label>Från:<br><input type="text" name="from" placeholder="Upphämtningsplats"></label><br>
+                        <label>Till:<br><input type="text" name="to" placeholder="Avlämningsplats"></label><br>
+                        <p>Estimerad restid: </p>
+                    </fieldset>
+                </div>
+                <div class="customer_info">
+                    <fieldset>
+                        <legend>Kund</legend>
+                        <label>Namn:<br><input type="text" name="name"
+                                placeholder="Skriv kundens namn här..."></label><br>
+                        <label>Telefon:<br><input type="text" name="phone"
+                                placeholder="Skriv telefonnnummer här..."></label><br>
+                        Antal passagerare:
+                        <select name="passengers">
+                            <option value="1" selected>1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                        </select>
+                    </fieldset>
+                </div>
+                <div class="other_info">
+                    <h2>Tillval:</h2>
+                </div>
+            </form>
 
-    </main>
-    <footer></footer>
+        </main>
 </body>
 
 </html>
