@@ -5,18 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="with-device-width, initial-scale=1.0">
     <title>Bokningssystem | Tiger Taxi</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="index.css">
     <script src="script.js" defer></script>
 </head>
 
 <body>
     <div class="container">
         <header>
-            <img src="assets/tiger_taxi_logga.png" alt="Tiger Taxi Logga">
-            Tiger Taxi
-            Ny Bokning
-            Pågående
-            <a href=""><img src="assets/user_settings.png" alt="Användarinställningar"></a>
+            <div id="left_header">
+                <img src="assets/tiger_taxi_logga.png" alt="Tiger Taxi Logga">
+                <h1>Tiger Taxi</h1>
+            </div>
+            <div id="right_header">
+                <a id="userpic" href=""><img src="assets/user_settings.png" alt="Användarinställningar"></a>
+                <h2>Pågående</h2>
+                <h2>Ny Bokning</h2>
+            </div>
+            <hr>
+
         </header>
         <main>
             <form action="/index.html" method="post" class="info">
@@ -49,7 +55,42 @@
                     </fieldset>
                 </div>
                 <div class="other_info">
-                    <h2>Tillval:</h2>
+                    <fieldset>
+                        <legend>Övrigt</legend>
+
+                        Tillval:<br>
+                        <label>
+                            <input type="checkbox" name="ramp"><img src="assets/wheelchair.png" alt="wheelchair icon">
+                            Ramp
+                        </label><br>
+                        <label>
+                            <input type="checkbox" name="child"><img src="assets/childseat.png" alt="childseat icon">
+                            Barnstol
+                        </label><br>
+                        <label>
+                            <input type="checkbox" name="animal"><img src="assets/animal.png" alt="animal icon">
+                            Husdjur
+                        </label><br>
+                        <label>
+                            <input type="checkbox" name="luggage"><img src="assets/luggage.png" alt="luggage icon">
+                            Väskor
+                            <select name="luggage_amount" id="">
+                                <option value="one">1 </option>
+                                <option value="two">2</option>
+                                <option value="three">3</option>
+                                <option value="">4</option>
+                                </optgroup>
+                            </select>
+
+                        </label><br>
+
+                        <label></label>
+
+                        <textarea name="joe" id="" cols="30" rows="6"
+                            placeholder="Skriv ett meddelande här..."></textarea>
+                        </label>
+
+                    </fieldset>
                 </div>
             </form>
 
