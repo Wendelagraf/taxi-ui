@@ -1,17 +1,43 @@
-body {
-    background-image: url(/assets/crazy-taxi.jpg);
+.container {
+    display: flex;
+    flex-direction: column;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    font-family: Inter, sans-serif;
+    font-weight: 400;
+    color: black;
+}
+
+h1 {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+a > h2 {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+h2 {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+h2>p {}
+
+h3 {
+    font-size: 16px;
+    color: #F2F2F2;
+    font-weight: 700;
 }
 
 main {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    gap: 120px;
     max-width: 100%;
-    width: 2000px;
+    width: 1920px;
 }
 
 form {
@@ -23,11 +49,7 @@ fieldset {
     display: flex;
     flex-direction: column;
     border: none;
-    border-radius: 15px;
     box-sizing: border-box;
-    width: 90%;
-    height: 100%;
-
 }
 
 .info {
@@ -36,26 +58,28 @@ fieldset {
     gap: 20px;
 }
 
-.left_side {
-    flex: 0 0 450px;
-}
-
-.right_side {
+.right-side {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 1237px;
+    gap: 24px;
     flex: 1;
+    padding-top: 12px;
 }
 
-
-header{
+header {
     display: flex;
+    height: 56px;
     flex-direction: row;
     align-items: center;
+    border-bottom: 1px solid #D9D9D9;
 }
 
-#left_header {
+.left-header {
     flex: 0 1000px;
     display: flex;
     flex-direction: row;
@@ -66,104 +90,103 @@ header{
     padding: 0%;
 }
 
-#left_header>img {
-    height: 40px;
+.left-header>img {
+    height: 32px;
     width: auto;
     margin-top: 2.1%;
-   
-
 }
 
-
-#right_header {
+.header-icon-text {
     display: flex;
-     flex: 1;
+    flex-direction: row;
+}
+
+.right-header {
+    display: flex;
+    flex: 1;
     justify-content: right;
     flex-direction: row-reverse;
     gap: 5%;
     padding: 0%;
 }
 
-#userpic {
+.userpic {
     margin-top: 1%;
 }
 
-
-
-.destination_info {
+.destination-info {
     background-color: #8E8E8E;
-    border-radius: 15px;
+    border-radius: 12px;
     margin-top: 2.5%;
     margin-left: 1%;
+    width: 558px;
 }
 
-.customer_info {
+.customer-info {
     background-color: #8E8E8E;
-    border-radius: 15px;
+    border-radius: 12px;
     margin-top: 2.5%;
     margin-left: 1%;
+    padding-bottom: 5%;
+    width: 558px;
+    height: 218px;
 }
 
-.other_info {
+.other-info {
     background-color: #8E8E8E;
-    border-radius: 15px;
+    border-radius: 12px;
     margin: inline start 12px;
     margin: inline-end 12px;
     margin-top: 2.5%;
     margin-left: 1%;
-    height: 615px;
+    height: 426px;
+    width: 558px;
 }
 
-.destination_info,
-.customer_info,
-.other_info {
+.destination-info,
+.customer-info,
+.other-info {
     display: flex;
     flex-direction: column;
-    width: 100%;
-    max-width: 600px;
-
 }
 
-.info_text {
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-    font-weight: bold;
-    color: white;
+.info-text {
+    color: #F2F2F2;
 }
 
+.info-text > strong {
+    font-size: 28.63px;
+    font-weight: 600;
+}
 
 input {
     font-size: 20px;
     border-radius: 8px;
     padding: 7px 15px;
-
+    border: none;
 }
 
 select {
-    font-size: 15 px;
+    font-size: 15px;
 }
 
-.destination_input,
-.other_input,
-.customer_input {
+.destination-input,
+.other-input,
+.customer-input {
     display: flex;
     flex-direction: column;
-    gap: 15px;
-    padding: 5px;
     align-items: flex-start;
     padding-left: 20%;
 }
 
-.other_input {
-    padding-top: 15px;
-    padding-right: 80px;
+.other-input label {
+    padding: 1%;
 }
 
 textarea {
     width: 100%;
-    width: 240px;
-    height: 100px;
+    width: 270px;
+    height: 50px;
     border-radius: 5%;
     max-height: 190px;
     resize: vertical;
@@ -173,25 +196,31 @@ textarea ::placeholder {
     font-size: 15;
 }
 
-.right_side {
-    padding-top: 12px;
-}
-
 .taxi-card {
-    background-color: lightgrey;
-    width: 370px;
-    padding: 29px;
+    background-color: #F2F2F2;
+    width: 377px;
+    height: 462px;
+    padding: 12px 16px;
     display: flex;
     flex-direction: column;
     border-radius: 12px;
     gap: 15px;
-    font-weight: bold;
+}
+
+.logo-grid strong {
+    font-weight: 600;
+}
+
+.driver-name {
+    font-weight: 600;
+}
+
+.car-title {
+    font-weight: 600;
 }
 
 legend {
     padding-top: 10px;
-    color: white;
-    font-weight: bold;
 }
 
 label {
@@ -200,8 +229,10 @@ label {
 
 .info-box {
     background-color: white;
-    padding: 12px;
+    padding: 4px;
     border-radius: 8px;
+    padding-left: 15px;
+    font-size: 17px;
 }
 
 .status {
@@ -213,19 +244,12 @@ label {
 .arrival-box {
     border-radius: 5%;
     background-color: white;
-    height: 120px;
-    padding-left: 10px;
-}
-
-.counted {
-    padding-top: 10px;
-
-
+    padding: 12px 16px;
 }
 
 .time {
-    font-weight: bold;
-    font-size: 45px;
+    font-weight: 600;
+    font-size: 32px;
     margin: 0;
 }
 
@@ -251,10 +275,10 @@ label {
 .warning-tag {
     display: flex;
     align-items: center;
-    border-radius: 5%;
-    padding: 5px;
+    border-radius: 12px;
+    padding: 7px;
     margin-top: 5px;
-    background-color: yellow;
+    background-color: #E59E2321;
 }
 
 .specs-grid {
@@ -271,13 +295,14 @@ label {
 }
 
 .book-btn {
-    background-color: purple;
+    background-color: #4B195E;
     border-radius: 15px;
+    border: none;
     height: 45px;
     width: 60%;
     cursor: pointer;
     color: white;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: bold;
 }
 
@@ -285,15 +310,8 @@ label {
     display: flex;
     flex-direction: row;
     justify-content: center;
-
-}
-
-.info-box {
-    padding-left: 15px;
-    font-size: 17px;
 }
 
 .options {
-
     cursor: pointer;
 }
