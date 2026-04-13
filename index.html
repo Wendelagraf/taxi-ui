@@ -21,102 +21,338 @@
                 <h2>Pågående</h2>
                 <h2>Ny Bokning</h2>
             </div>
-            <hr>
+
 
         </header>
+        <hr>
         <main>
-            <form action="/index.html" method="post" class="info">
-                <div class="destination_info">
-                    <fieldset>
-                        <legend>Plats</legend>
-                        <label>Från:<br><input type="text" name="from" placeholder="Upphämtningsplats"></label><br>
-                        <label>Till:<br><input type="text" name="to" placeholder="Avlämningsplats"></label><br>
-                        <p>Estimerad restid: </p>
-                    </fieldset>
-                </div>
-                <div class="customer_info">
-                    <fieldset>
-                        <legend>Kund</legend>
-                        <label>Namn:<br><input type="text" name="name"
-                                placeholder="Skriv kundens namn här..."></label><br>
-                        <label>Telefon:<br><input type="text" name="phone"
-                                placeholder="Skriv telefonnnummer här..."></label><br>
-                        Antal passagerare:
-                        <select name="passengers">
-                            <option value="1" selected>1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                            <option value="6">6</option>
-                            <option value="7">7</option>
-                            <option value="8">8</option>
-                        </select>
-                    </fieldset>
-                </div>
-                <div class="other_info">
-                    <fieldset>
-                        <legend>Övrigt</legend>
+            <div class="left_side">
 
-                        Tillval:<br>
-                        <label>
-                            <input type="checkbox" name="ramp"><img src="assets/wheelchair.png" alt="wheelchair icon">
-                            Ramp
-                        </label><br>
-                        <label>
-                            <input type="checkbox" name="child"><img src="assets/childseat.png" alt="childseat icon">
-                            Barnstol
-                        </label><br>
-                        <label>
-                            <input type="checkbox" name="animal"><img src="assets/animal.png" alt="animal icon">
-                            Husdjur
-                        </label><br>
-                        <label>
-                            <input type="checkbox" name="luggage"><img src="assets/luggage.png" alt="luggage icon">
-                            Väskor
-                            <select name="luggage_amount" id="">
-                                <option value="one">1 </option>
-                                <option value="two">2</option>
-                                <option value="three">3</option>
-                                <option value="">4</option>
-                                </optgroup>
-                            </select>
+                <form action="/index.html" method="post" class="info">
+                    <div class="destination_info">
+                        <fieldset>
+                            <legend>Plats</legend>
+                            <div class="destination_input">
 
-                        </label><br>
-
-                        <label></label>
-
-                        <textarea name="joe" id="" cols="30" rows="6"
-                            placeholder="Skriv ett meddelande här..."></textarea>
-                        </label>
-
-                    </fieldset>
-                </div>
-            </form>
-            <div class="cards">
-                <div class="card">
-                    <img src="assets/taxi_green.png" alt="taxi_green"> <h3>Bilen är tillgänglig</h3>
-                    <div></div>
-                    <div>Toyota Prius • Hybrid • Vit • PRI 333
-                        <img src="assets/people.png" alt="people icon"> 4 sittplatser
-                        <img src="assets/childseat.png" alt="childseat icon"> Barnstol
-                        <img src="assets/luggage.png" alt="luggage icon"> 3 väskor
-                        <img src="assets/animal.png" alt="animal icon"> Husdjur
+                                <label>Från:<br><input type="text" name="from"
+                                        placeholder="Upphämtningsplats"></label><br>
+                                <label>Till:<br><input type="text" name="to" placeholder="Avlämningsplats"></label><br>
+                                <p class="info_text">Estimerad restid: </p>
+                            </div>
+                        </fieldset>
                     </div>
-                    <div>
-                        Sven-Kenneth Järeskog-Jureklev
-                        <img src="assets/id.png" alt="id icon"> 2097
-                        <img src="assets/man_icon.png" alt="man icon"> Man
-                        <img src="assets/globe.png" alt="globe icon"> Svenska, Finska
-                        <div>
-                           <img src="assets/warning_yellow.png" alt="warning_yellow icon"> > 20 min till pass avslutas
+
+                    <div class="customer_info">
+                        <fieldset>
+                            <legend>Kund</legend>
+                            <div class="customer_input">
+
+                                <label>Namn:<br><input type="text" name="name"
+                                        placeholder="Skriv kundens namn här..."></label><br>
+                                <label>Telefon:<br><input type="text" name="phone"
+                                        placeholder="Skriv telefonnnummer här..."></label><br>
+                                <p class="info_text"> passagerare:
+                                    
+                                    <select name="passengers">
+                                        <option value="1" selected>1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                    </select>
+                                </p>
+                            </div>
+                        </fieldset>
+                    </div>
+
+                    <div class="other_info">
+                        <fieldset>
+                            <legend>Övrigt</legend>
+                            <div class="other_input">
+
+                                <p class="info_text"> Tillval:</p><br>
+                                <label>
+                                    <input type="checkbox" name="ramp" class="options"><img src="assets/wheelchair.png"
+                                        alt="wheelchair icon">
+                                    Ramp
+                                </label><br>
+                                <label>
+                                    <input type="checkbox" name="child" class="options"><img src="assets/childseat.png"
+                                        alt="childseat icon">
+                                    Barnstol
+                                </label><br>
+                                <label>
+                                    <input type="checkbox" name="animal" class="options"><img src="assets/animal.png"
+                                        alt="animal icon">
+                                    Husdjur
+                                </label><br>
+                                <label>
+                                    <input type="checkbox" name="luggage" class="options"><img src="assets/luggage.png"
+                                        alt="luggage icon">
+                                    Väskor
+                                    <select name="luggage_amount" id="">
+                                        <option value="1">1 </option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                    </select>
+
+                                </label><br>
+
+                                <label>
+                                    <p>Meddelande till föraraen</p>
+                                    <textarea name="joe" id="" cols="45" rows="6"
+                                        placeholder="Skriv ett meddelande här..."></textarea>
+                                </label>
+                            </div>
+
+                        </fieldset>
+                    </div>
+                </form>
+            </div>
+
+            <div class="right_side">
+                <div class="taxi-card">
+                    <div class="card-header">
+                        <div class="status">
+                            <img src="assets/taxi_green.png" alt="">
+                            <span>Bilen är tillgänglig</span>
                         </div>
-                        <button>Boka</button>
+                        <div class="arrival-box">
+                            <p class="counted">Beräknad ankomst</p>
+                            <p class="time">8 min</p>
+                        </div>
+                    </div>
+
+                    <div class="info-box">
+                        <p class="car-title">Toyota Prius • Hybrid • Vit • PRI 333</p>
+                        <div class="logo-grid">
+                            <span><img src="assets/people.png"> 4 sittplatser</span>
+                            <span><img src="assets/childseat.png"> Barnstol</span>
+                            <span><img src="assets/luggage.png"> 3 väskor</span>
+                            <span><img src="assets/animal.png"> Husdjur</span>
+                        </div>
+                    </div>
+
+                    <div class="info-box">
+                        <p class="driver-name">Sven-Kenneth Järeskog-Jureklev</p>
+                        <div class="specs-grid">
+                            <span><img src="assets/id.png"> 2097</span>
+                            <span><img src="assets/man_icon.png"> Man</span>
+                            <span><img src="assets/globe.png"> Svenska, Finska</span>
+                        </div>
+                        <div class="warning-tag">
+                            <img src="assets/warning_yellow.png">
+                            <span>> 20 min till pass avslutas</span>
+                        </div>
+                    </div>
+                    <div class="book-btn-div">
+
+                        <button class="book-btn">BOKA</button>
+                    </div>
+                </div>
+
+                <div class="taxi-card">
+                    <div class="card-header">
+                        <div class="status">
+                            <img src="assets/taxi_green.png" alt="">
+                            <span>Bilen är tillgänglig</span>
+                        </div>
+                        <div class="arrival-box">
+                            <p class="counted">Beräknad ankomst</p>
+                            <p class="time">12 min</p>
+                        </div>
+                    </div>
+
+                    <div class="info-box">
+                        <p class="car-title">Volvo V90 • Kombi • SilverGrå • ABS 413</p>
+                        <div class="logo-grid">
+                            <span><img src="assets/people.png"> 4 sittplatser</span>
+                            <span><img src="assets/childseat.png"> Barnstol</span>
+                            <span><img src="assets/luggage.png"> 2 väskor</span>
+                            <span><img src="assets/animal.png"> Husdjur</span>
+                        </div>
+                    </div>
+
+                    <div class="info-box">
+                        <p class="driver-name">Åke Bjurklint</p>
+                        <div class="specs-grid">
+                            <span><img src="assets/id.png"> 2081</span>
+                            <span><img src="assets/man_icon.png"> Man</span>
+                            <span><img src="assets/globe.png"> Svenska, Finska</span>
+                        </div>
+                        <div class="warning-tag">
+                            <img src="assets/warning_yellow.png">
+                            <span>> 40 min till pass avslutas</span>
+                        </div>
+                    </div>
+                    <div class="book-btn-div">
+
+                        <button class="book-btn">BOKA</button>
+                    </div>
+                </div>
+                <div class="taxi-card">
+                    <div class="card-header">
+                        <div class="status">
+                            <img src="assets/taxi_green.png" alt="">
+                            <span>Bilen är tillgänglig</span>
+                        </div>
+                        <div class="arrival-box">
+                            <p class="counted">Beräknad ankomst</p>
+                            <p class="time">3 min</p>
+                        </div>
+                    </div>
+
+                    <div class="info-box">
+                        <p class="car-title">Mercedes-Benz • Premium • Blå • ZIE 212</p>
+                        <div class="logo-grid">
+                            <span><img src="assets/people.png"> 4 sittplatser</span>
+                            <span><img src="assets/childseat.png"> Barnstol</span>
+                            <span><img src="assets/luggage.png"> 3 väskor</span>
+                            <span><img src="assets/animal.png"> Husdjur</span>
+                        </div>
+                    </div>
+
+                    <div class="info-box">
+                        <p class="driver-name">Anita Swingfors-Åkerman</p>
+                        <div class="specs-grid">
+                            <span><img src="assets/id.png"> 3001</span>
+                            <span><img src="assets/man_icon.png"> Man</span>
+                            <span><img src="assets/globe.png"> Svenska, Finska</span>
+                        </div>
+                        <div class="warning-tag">
+                            <img src="assets/warning_yellow.png">
+                            <span>> 10 min till pass avslutas</span>
+                        </div>
+                    </div>
+                    <div class="book-btn-div">
+
+                        <button class="book-btn">BOKA</button>
+                    </div>
+                </div>
+                <div class="taxi-card">
+                    <div class="card-header">
+                        <div class="status">
+                            <img src="assets/taxi_red.png" alt="">
+                            <span>Bilen är tillgänglig</span>
+                        </div>
+                        <div class="arrival-box">
+                            <p class="counted">Beräknad ankomst</p>
+                            <p class="time">52 min</p>
+                        </div>
+                    </div>
+
+                    <div class="info-box">
+                        <p class="car-title">Citroäng C3 • Röd • DXU 569</p>
+                        <div class="logo-grid">
+                            <span><img src="assets/people.png"> 4 sittplatser</span>
+                            <span><img src="assets/childseat.png"> Barnstol</span>
+                            <span><img src="assets/luggage.png"> 3 väskor</span>
+                            <span><img src="assets/animal.png"> Husdjur</span>
+                        </div>
+                    </div>
+
+                    <div class="info-box">
+                        <p class="driver-name">Ifra Abdiulla</p>
+                        <div class="specs-grid">
+                            <span><img src="assets/id.png"> 4325</span>
+                            <span><img src="assets/man_icon.png"> Kvinna</span>
+                            <span><img src="assets/globe.png"> Svenska, Somaliska</span>
+                        </div>
+                        <div class="warning-tag">
+                            <img src="assets/warning_yellow.png">
+                            <span>> 2 min till pass avslutas</span>
+                        </div>
+                    </div>
+                    <div class="book-btn-div">
+
+                        <button class="book-btn">BOKA</button>
+                    </div>
+                </div>
+                <div class="taxi-card">
+                    <div class="card-header">
+                        <div class="status">
+                            <img src="assets/taxi_red.png" alt="">
+                            <span>Bilen är tillgänglig</span>
+                        </div>
+                        <div class="arrival-box">
+                            <p class="counted">Beräknad ankomst</p>
+                            <p class="time">17 min</p>
+                        </div>
+                    </div>
+
+                    <div class="info-box">
+                        <p class="car-title">Toyota Prius • Hybrid • Vit • XLV 562</p>
+                        <div class="logo-grid">
+                            <span><img src="assets/people.png"> 7 sittplatser</span>
+                            <span><img src="assets/childseat.png"> Barnstol</span>
+                            <span><img src="assets/luggage.png"> 5 väskor</span>
+                            <span><img src="assets/animal.png"> Husdjur</span>
+                        </div>
+                    </div>
+
+                    <div class="info-box">
+                        <p class="driver-name">Karin Adelsköld</p>
+                        <div class="specs-grid">
+                            <span><img src="assets/id.png"> 6578</span>
+                            <span><img src="assets/man_icon.png"> Hen</span>
+                            <span><img src="assets/globe.png"> Svenska, Finska</span>
+                        </div>
+                        <div class="warning-tag">
+                            <span>> 100 min till pass avslutas</span>
+                        </div>
+                    </div>
+                    <div class="book-btn-div">
+
+                        <button class="book-btn">BOKA</button>
+                    </div>
+                </div>
+                <div class="taxi-card">
+                    <div class="card-header">
+                        <div class="status">
+                            <img src="assets/taxi_yellow.png" alt="">
+                            <span>Bilen är snart tillgänglig</span>
+                        </div>
+                        <div class="arrival-box">
+                            <p class="counted">Beräknad ankomst</p>
+                            <p class="time">10 min</p>
+                        </div>
+                    </div>
+
+                    <div class="info-box">
+                        <p class="car-title">Toyota Aygo • Small • Orange • XRV455</p>
+                        <div class="logo-grid">
+                            <span><img src="assets/people.png"> 4 sittplatser</span>
+                            <span><img src="assets/childseat.png"> Barnstol</span>
+                            <span><img src="assets/luggage.png"> 1 väskor</span>
+                            <span><img src="assets/animal.png"> Husdjur</span>
+                        </div>
+                    </div>
+
+                    <div class="info-box">
+                        <p class="driver-name">Xenricsa Khazari</p>
+                        <div class="specs-grid">
+                            <span><img src="assets/id.png"> 145</span>
+                            <span><img src="assets/man_icon.png"> Kvinna</span>
+                            <span><img src="assets/globe.png"> Svenska, Persiska</span>
+                        </div>
+                        <div class="warning-tag">
+                            <span> 45 min till pass avslutas</span>
+                        </div>
+                    </div>
+                    <div class="book-btn-div">
+
+                        <button class="book-btn">BOKA</button>
                     </div>
                 </div>
             </div>
         </main>
+
     </div>
+    </div>
+
 </body>
 
 </html>
