@@ -242,6 +242,7 @@ label {
     padding-bottom: 5%;
     font-weight: 600;
     font-size: 16px;
+    color: #3A3A3A;
 }
 
 .arrival-box {
@@ -260,10 +261,21 @@ label {
 .logo-grid {
     display: flex;
     flex-wrap: wrap;
-
+    justify-content: flex-start;
+    align-items: center;
     gap: 7px;
     margin-top: 8px;
 }
+
+.logo-grid-left {
+    margin-bottom: 2%;
+}
+
+.logo-grid-right {
+    margin-left: 10%;
+    margin-bottom: 2%;
+}
+
 
 .logo-grid img {
     width: 20px;
