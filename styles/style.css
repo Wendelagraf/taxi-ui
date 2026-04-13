@@ -14,7 +14,7 @@ h1 {
     font-weight: 700;
 }
 
-a > h2 {
+a>h2 {
     font-size: 16px;
     font-weight: 400;
 }
@@ -150,9 +150,19 @@ header {
 
 .info-text {
     color: #F2F2F2;
+    margin-top: 15px;
+
 }
 
-.info-text > strong {
+.info-text>select {
+    border-radius: 5%;
+    padding-right: 28px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.info-text>strong {
     font-size: 28.63px;
     font-weight: 600;
 }
@@ -163,6 +173,9 @@ input {
     padding: 7px 15px;
     border: none;
 }
+
+
+
 
 select {
     font-size: 15px;
@@ -177,9 +190,15 @@ select {
     padding-left: 20%;
 }
 
-.other-input label {
-    padding: 1%;
+.väskor-div {
+    padding-left: 7px;
 }
+
+
+.other-input>label {
+    padding: 1.5%;
+}
+
 
 textarea {
     width: 100%;
@@ -234,6 +253,8 @@ label {
     font-size: 17px;
 }
 
+
+
 .status {
     display: flex;
     justify-content: right;
@@ -259,10 +280,9 @@ label {
 
 .logo-grid {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-
-    gap: 7px;
-    margin-top: 8px;
+    gap: 10px;
 }
 
 .logo-grid img {
@@ -273,7 +293,7 @@ label {
 .logo-grid span {
     display: flex;
     align-items: center;
-    gap: 9px;
+    gap: 11px;
 }
 
 .warning-tag {
