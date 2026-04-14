@@ -17,7 +17,8 @@ h1 {
 a {
     text-decoration: none;
 }
-a > h2 {
+
+a>h2 {
     font-size: 16px;
     font-weight: 400;
     color: #8E8E8E;
@@ -137,8 +138,6 @@ header {
 .other-info {
     background-color: #8E8E8E;
     border-radius: 12px;
-    margin: inline start 12px;
-    margin: inline-end 12px;
     margin-top: 2.5%;
     margin-left: 1%;
     height: 426px;
@@ -169,15 +168,13 @@ header {
     font-weight: 600;
 }
 
-input {
+.input-text {
+    width: 325px;
     font-size: 20px;
     border-radius: 8px;
-    padding: 7px 15px;
+    padding-block: 7px;
     border: none;
 }
-
-
-
 
 select {
     font-size: 15px;
@@ -202,11 +199,9 @@ select {
     padding-right: 20px;
 }
 
-
 .other-input>label {
     padding: 1.5%;
 }
-
 
 textarea {
     width: 100%;
@@ -215,10 +210,6 @@ textarea {
     border-radius: 5%;
     max-height: 190px;
     resize: vertical;
-}
-
-textarea ::placeholder {
-    font-size: 15;
 }
 
 .taxi-card {
